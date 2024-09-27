@@ -1,0 +1,280 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.h1 {
+  font-size: 55px;
+}
+body {
+  font-family: "Poppins";
+  font-size: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+}
+/* nav css */
+.navbar {
+  background-color: #161a28;
+}
+
+.nav-link.active {
+  color: white !important;
+  margin-inline: 5px;
+}
+
+.nav-item {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent !important;
+}
+.nav-link::after {
+  content: " ";
+  width: 70%;
+  height: 3px;
+  position: absolute;
+  bottom: 10%;
+  left: -100%;
+  background-color: white;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.nav-link:hover::after {
+  left: 12%;
+}
+/* home css */
+.home {
+  background-image: url(../assets/bg.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home .layer {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.icon {
+  font-size: 10px !important;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+/* about css */
+.button {
+  width: 60%;
+  margin-right: 8px;
+}
+#special:hover {
+  background-color: white !important;
+  color: black !important;
+  border-color: black !important;
+}
+#transparent:hover {
+  background-color: black;
+}
+.about p {
+  color: #748182;
+  font-size: 16px;
+}
+.about-img {
+  background-image: url(../assets/dots.png);
+}
+.about-img img {
+  position: relative;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  top: -30px;
+}
+/* Services CSS */
+.services {
+  background-color: #f7f7f7;
+}
+.services .bground {
+  background-color: white;
+}
+.services .icon-border {
+  width: 65px;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  color: black;
+}
+.services .item:hover .icon-border {
+  background-color: black;
+  color: #f7f7f7;
+}
+
+/* portfolio */
+
+.work .nav-link.active {
+  color: black !important;
+  margin-inline: 5px;
+  overflow: hidden;
+}
+.work .nav-link {
+  background-color: transparent !important;
+  font-weight: bold;
+}
+
+.work .nav-item {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent !important;
+}
+.work .nav-link.active::after {
+  content: " ";
+  width: 70%;
+  height: 3px;
+  position: absolute;
+  bottom: 10%;
+  left: 12%;
+  background-color: black;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.portfolio-layer {
+  background-color: white;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  padding-block: 65px;
+}
+.icn-work {
+  font-size: 10px;
+}
+.icon-border {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+.img:hover .portfolio-layer {
+  opacity: 1;
+}
+
+/* testimonial */
+.clients {
+  background-color: #f7f7f7;
+}
+.width {
+  width: 150px;
+}
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #869791 !important;
+}
+.clients p,
+.p {
+  color: #869791;
+}
+/* team */
+.card {
+  border-color: transparent !important;
+  border: 0 !important;
+  --bs-card-bg: transparent !important;
+}
+.card-img-top {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.team {
+  background-color: #f7f7f7;
+}
+.card-body {
+  background-color: #5b5b5b !important;
+}
+/* contact */
+.contact-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 35px;
+  background-color: #f7f7f7;
+  font-size: 25px;
+}
+
+.contact .item:hover .contact-icon {
+  background-color: black;
+  color: white;
+}
+.form-bg {
+  background-color: #f4f4f4 !important;
+  color: black;
+}
+.contact .button {
+  width: 12%;
+}
+.contact .button:hover {
+  background-color: white !important;
+  border-color: black !important;
+  color: black !important;
+}
+
+.team-layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0;
+}
+.icn-border {
+  width: 55px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 50%;
+}
+/* .services h2 ,.work h2 ,.clients h2 ,.team h2 ,.contact h2{
+      background-image: url(../assets/dots.png);
+      width: 10%;
+  } */
